@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ru.crmkurgan.main">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup"
+        android:requestLegacyExternalStorage="true"
+        android:name=".Constants.BaseApp">
+    <activity
+        android:name="ru.crmkurgan.main.Activity.SplashActivity"
+        android:screenOrientation="locked"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name="ru.crmkurgan.main.Activity.PropertyDetailActivity"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.LoginFormActivity"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/Login_phone_A"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.RegisterActivity"
+            android:screenOrientation="locked"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.MainActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.AllPropByTablActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.FullImageActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.SearchActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.AllPopularActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.AllPropActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.AllLatestActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.PrivacyActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.MyPropertyActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.FilterSearchActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.AboutActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.AddPropertyActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.EditPropertyActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="ru.crmkurgan.main.Activity.PicklocationActivity"
+            android:screenOrientation="locked" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/noActionBar" />
+        <activity
+            android:name="imagepicker.ui.imagepicker.ImagePickerActivity"
+            android:screenOrientation="locked" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9581387521325172~8759774964"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/coloraccent" />
+
+        <service android:name="ru.crmkurgan.main.Utils.NotificationReceive"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCAXFCtDDQp0TXaMW946_fUAgR56H1k6nc" />
+    </application>
+</manifest>

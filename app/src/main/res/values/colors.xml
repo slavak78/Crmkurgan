@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E95D2</color>
+    <color name="parentcolor">#1E95D2</color>
+    <color name="black">#2F2F2F</color>
+    <color name="veryblack">#000000</color>
+    <color name="white">#fff</color>
+    <color name="gray">#808080</color>
+    <color name="yellow">#ffb700</color>
+    <color name="light_blue">#03abcc</color>
+    <color name="green">#00d953</color>
+    <color name="transparentt">#00ffffff</color>
+    <color name="material_red_400">#EF5350</color>
+    <color name="dark_gray_background">#ff404040</color>
+    <color name="ios_gray_text">#E91E63</color>
+    <color name="standard_white">#FFFFFF</color>
+    <color name="dark_gray">#8E8E93</color>
+    <color name="light_gray">#C7C7CC</color>
+    <color name="light_white">#fffefe</color>
+    <color name="darkgray">#93959A</color>
+    <color name="coloraccent">#ff6a6a</color>
+    <color name="backgroundgray">#f4f3f3</color>
+    <color name="orange">#ff120b</color>
+    <color name="red">#a9010a</color>
+    <color name="defaultColor">#2962FF</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+    <color name="colorBackground">#f0f0f0</color>
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="imagepicker_white">#FFFFFF</color>
+    <color name="imagepicker_black_alpha_30">#4D000000</color>
+    <color name="imagepicker_grey">#424242</color>
+    <color name="imagepicker_dark">#323232</color>
+    <color name="imagepicker_teal">#009688</color>
+    <color name="imagepicker_blue">#1976D2</color>
+</resources>

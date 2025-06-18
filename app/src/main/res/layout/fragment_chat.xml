@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:clickable="true"
+    android:id="@+id/Chat_F"
+    tools:context=".Fragment.ChatFragment"
+    android:focusable="true"
+    android:fitsSystemWindows="true">
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:background="@color/colorPrimary">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <ImageButton
+                android:id="@+id/Goback"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/transparent"
+                android:scaleType="fitStart"
+                android:src="@drawable/ic_back" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileimage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/Goback"
+                android:src="@drawable/image_placeholder" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/profileimage"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp">
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"/>
+
+                <customfonts.TextViewSFProDisplayMedium
+                    android:id="@+id/typeindicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:text="@string/typing"/>
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/block"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:background="@color/transparentt"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_block" />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/chat_layout"
+    android:background="@drawable/background_chat"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+      <LinearLayout
+          android:id="@+id/llcamera"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:orientation="horizontal"
+          android:visibility="gone"
+          android:gravity="center"
+          android:background="@drawable/round_edittext_chat"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="5dp"
+          android:layout_above="@+id/writechatlayout">
+
+         <LinearLayout
+             android:id="@+id/takephoto"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+             android:layout_margin="10dp"
+          android:layout_weight="1"
+             android:gravity="center"
+          android:orientation="vertical">
+          <ImageView
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:src="@drawable/ic_takecamera"/>
+          <customfonts.TextViewSFProDisplayMedium
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/cam"
+              android:gravity="center"
+              android:textColor="@color/black"/>
+      </LinearLayout>
+          <LinearLayout
+              android:id="@+id/opengallery"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_margin="10dp"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:orientation="vertical">
+
+              <ImageView
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:src="@drawable/ic_gallery" />
+              <customfonts.TextViewSFProDisplayMedium
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/gallery"
+                  android:gravity="center"
+                  android:textColor="@color/black"/>
+          </LinearLayout>
+
+      </LinearLayout>
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:id="@+id/progress_bar"/>
+
+      <RelativeLayout
+          android:id="@+id/writechatlayout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:layout_marginStart="10dp"
+          android:layout_marginEnd="70dp"
+          android:layout_alignParentBottom="true"
+          android:background="@drawable/round_edittext_chat">
+<hani.momanii.supernova_emoji_library.Helper.EmojiconEditText
+    android:id="@+id/msgedittext"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:layout_centerVertical="true"
+    android:layout_marginEnd="75dp"
+    android:layout_marginStart="40dp"
+    android:hint="@string/yourm"
+    android:textColorHint="@color/gray"
+    android:textColor="@color/black"
+    emojicon:emojiconSize="25dp"
+    android:fontFamily="@font/neosanspro_medium"
+    android:background="@drawable/round_edittext_chat"
+    android:textSize="12sp"/>
+
+
+
+          <ImageView
+              android:id="@+id/emoticon"
+              android:layout_width="25dp"
+              android:layout_height="25dp"
+              android:layout_centerVertical="true"
+              android:layout_marginStart="9dp"
+              android:src="@drawable/ic_emoji"
+              app:tint="@color/gray" />
+
+          <ImageView
+              android:id="@+id/uploadimagebtn"
+              android:layout_width="25dp"
+              android:layout_height="50dp"
+              android:layout_alignParentEnd="true"
+              android:layout_centerVertical="true"
+              android:layout_marginEnd="10dp"
+              android:src="@drawable/ic_camera"
+              app:tint="@color/gray" />
+      </RelativeLayout>
+      <ImageView
+          android:id="@+id/sendbtn"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="end"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/ic_send"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"/>
+      <ImageButton
+          android:id="@+id/mic_btn"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_gravity="end"
+          android:layout_marginEnd="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@drawable/ic_micsend"
+          android:layout_alignParentBottom="true"
+          android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

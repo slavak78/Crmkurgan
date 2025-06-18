@@ -1,0 +1,263 @@
+<resources>
+    <string name="app_name">Перспектива24-Курган</string>
+    <string name="address">Адрес</string>
+    <string name="menu_home">Главная</string>
+    <string name="menu_property">Каталог</string>
+    <string name="menu_favourite">Избранное</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="add">Добавить объект</string>
+    <string name="nodata">Нет данных</string>
+    <string name="empt">Запрос не может быть пустым!</string>
+    <string name="question">Вы действительно хотите закрыть приложение?</string>
+    <string name="yes">ДА</string>
+    <string name="no">НЕТ</string>
+    <string name="upd_text">Пожалуйста, обновите приложение</string>
+    <string name="upd">Обновить</string>
+    <string name="details">Об объекте</string>
+    <string name="category">Категория</string>
+    <string name="type">Тип объекта</string>
+    <string name="rate">Оценить</string>
+    <string name="description">Описание</string>
+    <string name="gallery">Фотографии</string>
+    <string name="edit">Редактировать</string>
+    <string name="remove">Удалено из избранного</string>
+    <string name="addfav">Добавлено в избранное</string>
+    <string name="rate1">Оценка</string>
+    <string name="rate2">Оценить приложение</string>
+    <string name="thanks">Спасибо за отзыв</string>
+    <string name="send">Отправить</string>
+    <string name="loading">Загрузка…</string>
+    <string name="problem">Неизвестная ошибка</string>
+    <string name="nointernet">Нет связи с интернетом</string>
+    <string name="copied">Текст скопирован в буфер обмена</string>
+    <string name="buffer">Буфер обмена</string>
+    <string name="standard_title">Title</string>
+    <string name="standard_message">Message</string>
+    <string name="login">Авторизация</string>
+    <string name="login1">Войти</string>
+    <string name="logout">Выйти</string>
+    <string name="logindesc">Введите номер телефона, который можно использовать для подтверждения вашей личности с помощью текстового сообщения или телефонного звонка. </string>
+    <string name="plus7">+7</string>
+    <string name="hintphone">Ваш номер телефона </string>
+    <string name="next">Далее</string>
+    <string name="verifydesc">Мы отправили вам код для подтверждения вашего номера телефона</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="norecieve">Я не получил код!</string>
+    <string name="resend">Повторно отправить</string>
+    <string name="verify">Проверка телефона</string>
+    <string name="otprav">Код отправлен на номер</string>
+    <string name="erver">Неверный код подтверждения!</string>
+    <string name="ernumber">Неверный номер!</string>
+    <string name="register">Регистрация</string>
+    <string name="name">Имя</string>
+    <string name="submit">Отправить</string>
+    <string name="choosephoto">Выберите фото</string>
+    <string name="vvod">Имя не введено!</string>
+    <string name="timer">00:00</string>
+    <string name="timer1">02:00</string>
+    <string name="yourm">Ваше сообщение</string>
+    <string name="seen">Отправлено в</string>
+    <string name="sent">Отправлено</string>
+    <string name="notdelivered">Не доставлено</string>
+    <string name="messdel">Это сообщение удалено пользователем</string>
+    <string name="today">сегодня</string>
+    <string name="yesterday">вчера</string>
+    <string name="jan1">1 января</string>
+    <string name="nomes">Нет сообщений</string>
+    <string name="pri">1000</string>
+    <string name="area">Площадь</string>
+    <string name="rent">Аренда</string>
+    <string name="search">Поиск</string>
+    <string name="obj">Объекты</string>
+    <string name="sort">Сортировка</string>
+    <string name="notfound">Нет объектов</string>
+    <string name="nores">Нет результата</string>
+    <string name="ub">По убыванию цены</string>
+    <string name="voz">По возрастанию цены</string>
+    <string name="umol">По умолчанию</string>
+    <string name="price">Цена</string>
+    <string name="search1">Найти</string>
+    <string name="min">0 ₽</string>
+    <string name="max">10 000 000 ₽</string>
+    <string name="err">Неизвестная ошибка!</string>
+    <string name="about">О нас</string>
+    <string name="subject">Тема письма</string>
+    <string name="email_text">Текст сообщения</string>
+    <string name="sende">Отправка письма</string>
+    <string name="noemail">Почтовый клиент не установлен</string>
+    <string name="imagepicker_action_ok">OK</string>
+    <string name="imagepicker_action_done">ВЫБРАТЬ</string>
+    <string name="imagepicker_action_cancel">ОТМЕНА</string>
+
+    <string name="imagepicker_title_folder">Альбомы</string>
+    <string name="imagepicker_title_image">Фотографии</string>
+
+    <string name="imagepicker_error_create_image_file">Ошибка открытия камеры</string>
+
+    <string name="imagepicker_error_no_camera">Нет камеры.</string>
+    <string name="imagepicker_error_open_camera">Не удалось открыть камеру.</string>
+    <string name="imagepicker_msg_no_camera_permission">Чтобы продолжить, пожалуйста, предоставьте доступ к фотографированию</string>
+    <string name="imagepicker_msg_no_images">Изображение недоступно.</string>
+    <string name="imagepicker_msg_no_external_storage_permission">Чтобы продолжить, пожалуйста, разрешите приложению получать доступ к фотографиям и мультимедиа на этом устройстве.</string>
+    <string name="imagepicker_msg_no_write_external_storage_permission">Чтобы продолжить, пожалуйста, предоставьте доступ к вашим фотографиям</string>
+    <string name="imagepicker_msg_no_write_external_storage_camera_permission">Чтобы продолжить, пожалуйста, предоставьте доступ к фотографированию</string>
+    <string name="imagepicker_msg_limit_images">Ограничить выбор %d изображениями.</string>
+    <string name="folder">Папка</string>
+    <string name="addproperty">Добавление объекта</string>
+    <string name="photo">Фото</string>
+    <string name="obj1">Объект</string>
+    <string name="mesto">Местоположение</string>
+    <string name="addlocation">Добавьте свое местоположение</string>
+    <string name="simpleadd">Добавить</string>
+    <string name="notav">Не доступен</string>
+    <string name="noaddress">Пожалуйста, введите адрес</string>
+    <string name="noarea">Пожалуйста, введите общую площадь</string>
+    <string name="noprice">Пожалуйста, введите цену</string>
+    <string name="nodesc">Пожалуйста, введите описание</string>
+    <string name="noizo">Не выбрано фото!</string>
+    <string name="wait">Пожалуйста, подождите</string>
+    <string name="chat">Чат</string>
+    <string name="privacy">Политика конфиденциальности</string>
+    <string name="my">Мои объекты</string>
+    <string name="share">Поделиться</string>
+    <string name="shareapp">Позвольте мне порекомендовать вам это приложение</string>
+    <string name="logoutqe">Вы уверены, что хотите выйти?</string>
+    <string name="typing">Печатает…</string>
+    <string name="cam">Камера</string>
+    <string name="userblocked">Пользователь заблокирован</string>
+    <string name="userunblocked">Пользователь разблокирован</string>
+    <string name="nocamera">Доступ к камере запрещен</string>
+    <string name="notfound1">Не найден</string>
+    <string name="downl">Загрузка</string>
+    <string name="error">Ошибка</string>
+    <string name="here">Отправить сообщение здесь…</string>
+    <string name="questblock">Вы уверены, что хотите заблокировать этого пользователя?</string>
+    <string name="questunblock">Вы уверены, что хотите разблокировать этого пользователя?</string>
+    <string name="record">Запись…</string>
+    <string name="hold">Удерживайте кнопку микрофона для записи</string>
+    <string name="stop">Остановка записи…</string>
+    <string name="delmes">Удалить данное собщение</string>
+    <string name="otmena">Отмена</string>
+    <string name="editprofile">Редактирование профиля</string>
+    <string name="izm">Изменить</string>
+    <string name="popular">Популярные</string>
+    <string name="viewmore">Еще</string>
+    <string name="latest">Недавние</string>
+    <string name="downloaded">Обновление только что было загружено из Google Play</string>
+    <string name="reload">Перезагрузка</string>
+    <string name="user">Пользователь</string>
+    <string name="message">Сообщение</string>
+    <string name="saved">Изображение сохранено</string>
+    <string name="aboutproperty">Об объекте</string>
+    <string name="komnatnost">Комнатность</string>
+    <string name="pl_ob">Общая площадь</string>
+    <string name="planir">Тип планировки</string>
+    <string name="remont">Ремонт</string>
+    <string name="sanuzel">Санузел</string>
+    <string name="balkon">Балкон</string>
+    <string name="aboutdom">О доме</string>
+    <string name="etash">Этаж/этажность</string>
+    <string name="postroy">Год постройки</string>
+    <string name="stena">Материал стен</string>
+    <string name="golos">Голосовое сообщение</string>
+    <string name="namechannel">Уведомления</string>
+    <string name="aboutproperty1">О квартире</string>
+    <string name="pldom">Площадь дома</string>
+    <string name="razd_komnat">Количество комнат</string>
+    <string name="etashnost">Этажность</string>
+    <string name="electro">Электроснабжение</string>
+    <string name="otop">Отопление</string>
+    <string name="gaz">Газоснабжение</string>
+    <string name="canalya">Канализация</string>
+    <string name="aboutzemlya">Об участке</string>
+    <string name="zemlya">Площадь участка</string>
+    <string name="raion">Район</string>
+    <string name="clicks1">Нажмите еще раз</string>
+    <string name="data_sozd">Дата создания*</string>
+    <string name="material_calendar_monday">Пн</string>
+    <string name="material_calendar_tuesday">Вт</string>
+    <string name="material_calendar_wednesday">Ср</string>
+    <string name="material_calendar_thursday">Чт</string>
+    <string name="material_calendar_friday">Пт</string>
+    <string name="material_calendar_saturday">Сб</string>
+    <string name="material_calendar_sunday">Вс</string>
+    <array name="material_calendar_day_abbreviations_array">
+        <item>@string/material_calendar_sunday</item>
+        <item>@string/material_calendar_monday</item>
+        <item>@string/material_calendar_tuesday</item>
+        <item>@string/material_calendar_wednesday</item>
+        <item>@string/material_calendar_thursday</item>
+        <item>@string/material_calendar_friday</item>
+        <item>@string/material_calendar_saturday</item>
+    </array>
+    <array name="material_calendar_months_array">
+        <item>Январь</item>
+        <item>Февраль</item>
+        <item>Март</item>
+        <item>Апрель</item>
+        <item>Май</item>
+        <item>Июнь</item>
+        <item>Июль</item>
+        <item>Август</item>
+        <item>Сентябрь</item>
+        <item>Октябрь</item>
+        <item>Ноябрь</item>
+        <item>Декабрь</item>
+    </array>
+    <string name="material_calendar_today_button">Сегодня</string>
+    <string name="material_calendar_positive_button">OK</string>
+    <string name="material_calendar_negative_button">Отмена</string>
+    <string name="data_do">Договор до*</string>
+    <string name="exs">Эксклюзивный договор</string>
+    <string name="sogl">Соглашение</string>
+    <string name="info">Информация</string>
+    <string name="online">Онлайн-показ</string>
+    <string name="apart">Номер квартиры</string>
+    <string name="cadast">Кадастровый номер*</string>
+    <string name="client">Клиент*</string>
+    <string name="area1">Общая площадь*</string>
+    <string name="price1">Цена, тыс.руб.*</string>
+    <string name="razd_komnat1">Раздельных комнат</string>
+    <string name="balkon1">Лоджия, Балкон*</string>
+    <string name="planir1">Тип планировки*</string>
+    <string name="sanuzel1">Санузел*</string>
+    <string name="pl_zhil">Жилая площадь*</string>
+    <string name="pl_kitch">Площадь кухни*</string>
+    <string name="steklo">Стеклопакеты</string>
+    <string name="nach_etash">Этаж*</string>
+    <string name="kon_etash">Этажность*</string>
+    <string name="lift">Наличие лифта*</string>
+    <string name="est">Есть</string>
+    <string name="noest">Нет</string>
+    <string name="notukaz">Не указано</string>
+    <string name="ceiling">Высота потолков*</string>
+    <string name="goda">Год постройки*</string>
+    <string name="mebel">Мебель</string>
+    <string name="stena1">Материал стен*</string>
+    <string name="pereplan">Перепланировка</string>
+    <string name="postroy1">Срок эксплуатации</string>
+    <string name="remont1">Ремонт*</string>
+    <string name="wind">Вид из окна*</string>
+    <string name="yandex">Яндекс.Недвижимость</string>
+    <string name="cian">Циан</string>
+    <string name="domclick">ДомКлик</string>
+    <string name="uslovie">Условия продажи</string>
+    <string name="chp">Ч/П</string>
+    <string name="obmen">Обмен</string>
+    <string name="sdelka">Совм. сделка (% или тыс.руб.)</string>
+    <string name="video">Видео</string>
+    <string name="viewvideo">Просмотр видео</string>
+    <string name="nocadast">Пожалуйста, введите кадастровый номер</string>
+    <string name="nopl_zhil">Пожалуйста, введите жилую площадь</string>
+    <string name="nopl_kitch">Пожалуйста, введите площадь кухни</string>
+    <string name="nonach_etash">Пожалуйста, введите этаж</string>
+    <string name="nokon_etash">Пожалуйста, введите этажность</string>
+    <string name="noceiling">Пожалуйста, введите высоту потолков</string>
+    <string name="description1">Описание*</string>
+    <string name="addpic">Добавление фотографии</string>
+    <string name="tap">Тапните, чтобы выбрать</string>
+    <string name="imagepicker_text_gif">GIF</string>
+    <string name="Folder">Папка</string>
+    <string name="addphoto">Добавить фото</string>
+    <string name="address1">Адрес*</string>
+</resources>
